@@ -1,0 +1,359 @@
+.customize-page {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.customize-header {
+  margin-bottom: 3rem;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customize-header h1 {
+  font-size: 2.5rem;
+  margin: 0.75rem 0 0.5rem 0;
+  color: var(--accent-dark);
+}
+
+.customize-header p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.wizard-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.wizard-steps-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.wizard-step-box {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.step-number {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--accent-grey);
+  background: var(--bg-tertiary);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex-grow: 1;
+}
+
+.step-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-dark);
+}
+
+.step-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.garment-type-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.garment-btn {
+  background: var(--bg-tertiary);
+  border: 2px solid var(--border-color);
+  padding: 1.25rem 1rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+
+.garment-btn:hover {
+  border-color: var(--border-hover);
+}
+
+.garment-btn.selected {
+  background: var(--accent-dark);
+  color: #ffffff;
+  border-color: var(--accent-dark);
+}
+
+.garment-icon {
+  font-size: 2rem;
+}
+
+.garment-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.materials-selection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.material-choice-card {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: var(--transition);
+}
+
+.material-choice-card:hover {
+  border-color: var(--accent-grey);
+}
+
+.material-choice-card.active {
+  border-color: var(--accent-dark);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.mat-thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.mat-choice-info h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
+}
+
+.mat-fabric-tag {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  display: block;
+}
+
+.mat-pricing {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin-top: 0.2rem;
+}
+
+.check-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: var(--success);
+}
+
+.option-subgroup {
+  margin-bottom: 1.25rem;
+}
+
+.option-subgroup label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
+.color-options {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.color-pill {
+  padding: 0.4rem 0.9rem;
+  border-radius: 50px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+.color-pill.selected {
+  background: var(--accent-dark);
+  color: #ffffff;
+  border-color: var(--accent-dark);
+}
+
+.styling-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: var(--text-main);
+}
+
+.form-group select, .form-group input, .form-group textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: #ffffff;
+  font-size: 0.9rem;
+}
+
+.measurements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.m-group label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+
+.m-group input {
+  width: 100%;
+  padding: 0.55rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.margin-top-md {
+  margin-top: 1.25rem;
+}
+
+.wizard-summary-sidebar {
+  position: sticky;
+  top: 90px;
+}
+
+.summary-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-md);
+}
+
+.summary-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.75rem;
+}
+
+.summary-preview-img {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+
+.summary-preview-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.summary-garment-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(33, 37, 41, 0.9);
+  color: #ffffff;
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  border-radius: 4px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  margin-bottom: 0.6rem;
+}
+
+.summary-row span {
+  color: var(--text-muted);
+}
+
+.summary-divider {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 1.25rem 0;
+}
+
+.price-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.total-row {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
+}
+
+.total-price-tag {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--accent-dark);
+}
+
+.width-100 {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .wizard-layout {
+    grid-template-columns: 1fr;
+  }
+}
